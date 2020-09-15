@@ -11,3 +11,5 @@ services:
     sync: false
   - key: RCLONE_DESTINATION
     sync: false
+  - key: hostport
+    value: 0.0.0.0:6800
