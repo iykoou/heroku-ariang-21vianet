@@ -1,0 +1,13 @@
+services:
+# A Docker web service
+- type: web
+  name: xinproject
+  env: docker
+  healthCheckPath: /
+  envVars:
+  - key: ARIA2C_SECRET
+    sync: false
+  - key: RCLONE_CONFIG
+    sync: false
+  - key: RCLONE_DESTINATION
+    sync: false
